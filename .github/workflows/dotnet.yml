@@ -29,8 +29,12 @@ jobs:
       run: dotnet build BaseAPI/BaseAPI.csproj
     - name: Build_03
       run: dotnet build BaseProject/BaseProject.csproj
-#   - name: Test
-#     run: dotnet test --no-build --verbosity normal
+    - name: Test_01
+      run: dotnet test BaseAPI.Test/BaseAPI.Test.csproj
+    - name: Test_02
+      run: dotnet test BaseMVC.Test/BaseMVC.Test.csproj
+    - name: Test_03
+      run: dotnet test BaseProject.Test/BaseProject.Test.csproj
 #    - name: Upload a Build Artifact
 #     uses: actions/upload-artifact@v2.2.2
 #     with:
