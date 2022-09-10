@@ -18,11 +18,11 @@ jobs:
       with:
         dotnet-version: 6.0.x
     - name: Restore dependencies_01
-      run: dotnet restore UnitTesting/Base.MVC/Base.MVC.csproj
+      run: dotnet restore Base.MVC/Base.MVC.csproj
     - name: Restore dependencies_02
-      run: dotnet restore UnitTesting/BaseAPI/BaseAPI.csproj
+      run: dotnet restore BaseAPI/BaseAPI.csproj
     - name: Restore dependencies_03
-      run: dotnet restore UnitTesting/BaseProject/BaseProject.csproj
+      run: dotnet restore BaseProject/BaseProject.csproj
     - name: Build_01
       run: dotnet build UnitTesting/Base.MVC/Base.MVC.csproj.csproj
     - name: Build_02
