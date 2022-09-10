@@ -18,17 +18,17 @@ jobs:
       with:
         dotnet-version: 6.0.x
     - name: Restore dependencies_01
-      run: dotnet restore UnitTesting/Base.MVC.csproj
+      run: dotnet restore UnitTesting/Base.MVC/Base.MVC.csproj
     - name: Restore dependencies_02
-      run: dotnet restore UnitTesting/BaseAPI.csproj
+      run: dotnet restore UnitTesting/BaseAPI/BaseAPI.csproj
     - name: Restore dependencies_03
-      run: dotnet restore UnitTesting/BaseProject.csproj
+      run: dotnet restore UnitTesting/BaseProject/BaseProject.csproj
     - name: Build_01
-      run: dotnet build UnitTesting/Base.MVC.csproj.csproj
+      run: dotnet build UnitTesting/Base.MVC/Base.MVC.csproj.csproj
     - name: Build_02
-      run: dotnet build UnitTesting/BaseAPI.csproj.csproj
+      run: dotnet build UnitTesting/BaseAPI/BaseAPI.csproj.csproj
     - name: Build_03
-      run: dotnet build UnitTesting/BaseProject.csproj
+      run: dotnet build UnitTesting/BaseProject/BaseProject.csproj
 #   - name: Test
 #     run: dotnet test --no-build --verbosity normal
 #    - name: Upload a Build Artifact
