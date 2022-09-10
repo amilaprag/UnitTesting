@@ -24,11 +24,11 @@ jobs:
     - name: Restore dependencies_03
       run: dotnet restore BaseProject/BaseProject.csproj
     - name: Build_01
-      run: dotnet build UnitTesting/Base.MVC/Base.MVC.csproj.csproj
+      run: dotnet build Base.MVC/Base.MVC.csproj.csproj
     - name: Build_02
-      run: dotnet build UnitTesting/BaseAPI/BaseAPI.csproj.csproj
+      run: dotnet build BaseAPI/BaseAPI.csproj.csproj
     - name: Build_03
-      run: dotnet build UnitTesting/BaseProject/BaseProject.csproj
+      run: dotnet build BaseProject/BaseProject.csproj
 #   - name: Test
 #     run: dotnet test --no-build --verbosity normal
 #    - name: Upload a Build Artifact
